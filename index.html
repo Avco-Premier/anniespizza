@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annie's Pizzeria - Pizza, Fried Dough, Tacos & Subs in Medford, MA</title>
+    <meta name="description" content="Casual dining spot in Medford, MA serving creative pizzas, fried dough, tacos, subs, wraps, wings, and more. Dine-in, takeout, and delivery from Annie's Pizzeria.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #fffaf4;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 16px 0;
+            border-bottom: 2px solid #e3a54f;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            color: #b22222;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s ease, background 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #b22222;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #b22222;
+            color: #ffffff !important;
+            padding: 10px 22px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border: 1px solid #b22222;
+            transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .cta-button:hover {
+            background: #ffffff;
+            color: #b22222 !important;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .hero {
+            width: 100%;
+            min-height: 420px;
+            background:
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("https://images.pexels.com/photos/724216/pexels-photo-724216.jpeg?auto=compress&cs=tinysrgb&w=1600");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
+            padding: 0 16px;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            margin-bottom: 10px;
+            font-weight: 800;
+            text-shadow: 0 3px 12px rgba(0,0,0,0.6);
+        }
+
+        .hero-content p {
+            font-size: clamp(16px, 2.5vw, 20px);
+            max-width: 600px;
+            margin: 0 auto 22px auto;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .hero-badge {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 999px;
+            padding: 6px 14px;
+            font-size: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(4px);
+        }
+
+        .hero .cta-button {
+            font-size: 15px;
+            padding: 11px 26px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 32px;
+            color: #b22222;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 15px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+            gap: 40px;
+            align-items: start;
+        }
+
+        .about-text h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: #333;
+        }
+
+        .about-text p {
+            font-size: 15px;
+            margin-bottom: 14px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .menu-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .menu-chip {
+            padding: 6px 12px;
+            border-radius: 999px;
+            border: 1px solid #f0c27b;
+            font-size: 12px;
+            background: #fff7ea;
+            color: #7a4310;
+        }
+
+        .contact-info {
+            background: #fff;
+            padding: 26px 24px;
+            border-radius: 16px;
+            border: 1px solid #f0d2a4;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-info h3 {
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: #b22222;
+        }
+
+        .contact-info p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .contact-info strong {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .contact-info a {
+            color: #b22222;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin: 32px 0 8px 0;
+        }
+
+        .hours-card {
+            background: #fff;
+            padding: 22px 20px;
+            border-radius: 16px;
+            border: 1px solid #f0d2a4;
+            text-align: center;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+        }
+
+        .hours-card h4 {
+            color: #b22222;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .hours-card p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .hours-note {
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        #map {
+            width: 100%;
+            height: 420px;
+            border-radius: 16px;
+            margin-top: 26px;
+            border: 1px solid #f0d2a4;
+        }
+
+        section:nth-of-type(even) {
+            background: #fff3e2;
+        }
+
+        footer {
+            background: #1f1f1f;
+            color: #fff;
+            text-align: center;
+            padding: 28px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 13px;
+        }
+
+        footer .footer-sub {
+            margin-top: 6px;
+            font-size: 12px;
+            color: #bbb;
+        }
+
+        @media (max-width: 768px) {
+            header nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 14px;
+            }
+
+            .hero {
+                min-height: 360px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .contact-info {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Annie's Pizzeria</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#hours">Hours</a>
+                <a href="#location">Location</a>
+                <a href="#order" class="cta-button">Order Online</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Pizza, Fried Dough, Tacos & Subs</h1>
+            <p>Casual neighborhood spot in Medford serving creative specialty pizzas, crispy fried dough, tacos, subs & more — available for dine-in, takeout, and delivery.</p>
+
+            <div class="hero-badges">
+                <span class="hero-badge">Family-owned & proudly local</span>
+                <span class="hero-badge">Specialty & classic pies</span>
+                <span class="hero-badge">Wraps • Calzones • Wings • Salads</span>
+            </div>
+
+            <a href="#order" class="cta-button">Start Your Order</a>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Welcome to Annie's Pizzeria</h2>
+                    <p>
+                        Annie's is your go-to pizza spot at 213 Middlesex Ave, serving the Medford community with
+                        a stacked menu of familiar favorites and fun specialty combinations.
+                    </p>
+                    <p>
+                        From classic cheese and build-your-own pies to signature creations loaded with toppings,
+                        there’s something for everyone. Round it out with fried dough, wings, subs, wraps, salads,
+                        calzones, tacos, and more.
+                    </p>
+                    <p>
+                        Whether you’re grabbing a quick lunch, feeding the family, or ordering for a game night,
+                        Annie’s keeps it casual, comforting, and always delicious.
+                    </p>
+
+                    <div class="menu-highlights">
+                        <span class="menu-chip">Specialty Pizzas</span>
+                        <span class="menu-chip">Fried Dough</span>
+                        <span class="menu-chip">Tacos & Subs</span>
+                        <span class="menu-chip">Wraps & Calzones</span>
+                        <span class="menu-chip">Wings & Salads</span>
+                    </div>
+                </div>
+
+                <div class="contact-info" id="order">
+                    <h3>Visit or Call to Order</h3>
+                    <p>
+                        <strong>Address</strong>
+                        213 Middlesex Ave<br>
+                        Medford, MA 02155
+                    </p>
+                    <p>
+                        <strong>Phone</strong>
+                        <a href="tel:17812193731">(781) 219-3731</a>
+                    </p>
+                    <p>
+                        <strong>Online Ordering</strong>
+                        <a href="http://anniespizzeriamedford.com/index.php" target="_blank" rel="noopener">
+                            Order from Annie's Website
+                        </a>
+                    </p>
+                    <p style="margin-top: 14px; font-size: 13px; color: #777;">
+                        Menu & hours subject to change. Please call or check online ordering for the latest info.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hours">
+        <div class="container">
+            <h2 class="section-title">Hours of Operation</h2>
+            <p class="section-subtitle">
+                Stop by for lunch, dinner, or a late-night pizza run.
+            </p>
+
+            <div class="hours-grid">
+                <div class="hours-card">
+                    <h4>Monday – Saturday</h4>
+                    <p>11:00 AM – 10:00 PM</p>
+                </div>
+                <div class="hours-card">
+                    <h4>Sunday</h4>
+                    <p>Closed</p>
+                </div>
+            </div>
+
+            <p class="hours-note">
+                Hours may vary on holidays and special events. Give us a quick call at (781) 219-3731 to confirm.
+            </p>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="container">
+            <h2 class="section-title">Find Annie's Pizzeria</h2>
+            <p style="text-align: center; margin-bottom: 18px; font-size: 15px; color: #555;">
+                213 Middlesex Ave, Medford, MA 02155
+            </p>
+            <p style="text-align: center; font-size: 13px; color: #777;">
+                Located right in Medford — easy to swing by for pickup or meet your delivery driver out front.
+            </p>
+
+            <iframe
+                id="map"
+                src="https://www.google.com/maps?q=213+Middlesex+Ave,+Medford,+MA+02155&output=embed"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Annie's Pizzeria. All rights reserved.</p>
+            <p class="footer-sub">
+                213 Middlesex Ave, Medford, MA 02155 &nbsp;|&nbsp; (781) 219-3731
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Auto-set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
