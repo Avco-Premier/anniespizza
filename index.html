@@ -3,757 +3,960 @@
 <head>
   <meta charset="UTF-8" />
   <title>Annie's Pizzeria | Best Pizza In Medford, MA Near Me</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/6978/6978255.png">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/6978/6978255.png">
-    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/6978/6978255.png">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Annie's Pizzeria - Authentic pizza and Italian favorites in Medford, MA. Order online, dine in, or pick up. Best pizza near you!">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-
-    <!-- Open Graph / Social Sharing -->
-    <meta property="og:type" content="restaurant.restaurant">
-    <meta property="og:title" content="Annie's Pizzeria | Best Pizza Near Me">
-    <meta property="og:description" content="Annie's Pizzeria - Authentic pizza and Italian favorites in Medford, MA. Order online, dine in, or pick up. Best pizza near you!">
-    <meta property="og:image" content="https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Annie's Pizzeria - Delicious Pizza">
-    <meta property="og:site_name" content="Annie's Pizzeria">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Annie's Pizzeria | Best Pizza Near Me">
-    <meta name="twitter:description" content="Annie's Pizzeria - Authentic pizza and Italian favorites in Medford, MA. Order online, dine in, or pick up. Best pizza near you!">
-    <meta name="twitter:image" content="https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg">
-
-    <!-- Google Search Image -->
-    <meta itemprop="image" content="https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg">
-    <link rel="image_src" href="https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg">
-
-    <!-- Schema.org JSON-LD for Google Rich Results -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Restaurant",
-      "name": "Annie's Pizzeria",
-      "image": "https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg",
-      "servesCuisine": ["Pizza", "Italian"],
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Medford",
-        "addressRegion": "MA",
-        "addressCountry": "US"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "150"
-      }
-    }
-    </script>
-
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/6978/6978255.png">
+  <meta name="description" content="Annie's Pizzeria - Authentic pizza and Italian favorites in Medford, MA. Order online, dine in, or pick up.">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <!-- Font Awesome for icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPpDI0c5kS1C1j8QKq2aP5QDRyJVYbijx57wiVdc+oZqXW52xG4rL+ug=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="Annie's Pizzeria | Best Pizza Near Me">
+  <meta property="og:description" content="Annie's Pizzeria - Authentic pizza and Italian favorites in Medford, MA.">
+  <meta property="og:image" content="https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Annie's Pizzeria",
+    "image": "https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg",
+    "servesCuisine": ["Pizza", "Italian"],
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "213 Middlesex Ave",
+      "addressLocality": "Medford",
+      "addressRegion": "MA",
+      "postalCode": "02155",
+      "addressCountry": "US"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "150"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
     :root {
-      --primary-color: #c62828;
-      --primary-dark: #8e0000;
-      --accent-color: #ffb300;
-      --bg-light: #fff9f2;
-      --text-dark: #1f1f1f;
+      --red: #c0392b;
+      --red-deep: #922b21;
+      --cream: #faf5ef;
+      --cream-dark: #f0e8dc;
+      --gold: #d4a049;
+      --gold-light: #f0d48a;
+      --charcoal: #1a1a1a;
+      --warm-gray: #5c5650;
+      --white: #fffdf9;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text-dark);
-      background-color: #ffffff;
-      padding-top: 56px;
+      font-family: 'DM Sans', sans-serif;
+      color: var(--charcoal);
+      background: var(--cream);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* Navbar */
-    .navbar {
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      background-color: #ffffff;
-    }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
-    .navbar-brand {
+    /* ========== NAV ========== */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 1rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
+    }
+    .nav.scrolled {
+      background: rgba(255, 253, 249, 0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+      padding: 0.7rem 2rem;
+    }
+    .nav-logo {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 1.5rem;
+      color: var(--white);
+      transition: color 0.4s;
+      letter-spacing: 0.02em;
+    }
+    .nav.scrolled .nav-logo { color: var(--red); }
+
+    .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: rgba(255,255,255,0.85);
+      transition: color 0.3s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 2px;
+      background: var(--gold);
+      transition: width 0.3s;
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .nav.scrolled .nav-links a { color: var(--charcoal); }
+    .nav.scrolled .nav-links a:hover { color: var(--red); }
+
+    .nav-order-btn {
+      background: var(--red);
+      color: var(--white);
+      padding: 0.55rem 1.4rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
       font-weight: 700;
-      letter-spacing: 0.05em;
       text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .nav-order-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(192,57,43,0.4); }
+
+    /* Mobile menu */
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 101; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); transition: background 0.3s; }
+    .nav.scrolled .nav-toggle span { background: var(--charcoal); }
+
+    @media (max-width: 768px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        position: fixed; top: 0; right: -100%; width: 75vw; height: 100vh;
+        background: var(--charcoal);
+        flex-direction: column;
+        padding: 6rem 2.5rem 2rem;
+        gap: 1.5rem;
+        transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+      .nav-links.open { right: 0; }
+      .nav-links a { color: var(--cream) !important; font-size: 1rem; }
     }
 
-    .nav-link {
-      font-weight: 500;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-    }
-
-    .nav-link.active,
-    .nav-link:hover {
-      color: var(--primary-color) !important;
-    }
-
-    /* Hero section */
+    /* ========== HERO ========== */
     .hero {
       position: relative;
-      min-height: 80vh;
-      display: flex;
-      align-items: center;
-      color: #ffffff;
+      min-height: 100vh;
+      display: flex; align-items: center;
+      color: var(--white);
       overflow: hidden;
     }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
       background-image: url("https://d2kihw5e8drjh5.cloudfront.net/eyJidWNrZXQiOiJ1dGEtaW1hZ2VzIiwia2V5IjoicGxhY2VfaW1nL3NJQXk0MUk3UXpTaFctWnJhVmotWGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjY0MCwiaGVpZ2h0Ijo2NDAsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsInRvRm9ybWF0IjogIndlYnAifX0=");
       background-size: cover;
       background-position: center;
-      transform: scale(1.05);
-      filter: brightness(0.55);
-      z-index: -2;
+      transform: scale(1.08);
+      filter: brightness(0.35) saturate(1.1);
     }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at top left, rgba(255, 179, 0, 0.4), transparent 60%),
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
-      z-index: -1;
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: 1;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(192,57,43,0.25), transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(212,160,73,0.15), transparent 50%),
+        linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
+    }
+    .hero-grain {
+      position: absolute; inset: 0; z-index: 2;
+      opacity: 0.06;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 128px;
+      pointer-events: none;
     }
 
     .hero-content {
-      max-width: 700px;
+      position: relative; z-index: 3;
+      max-width: 750px;
+      padding: 2rem;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 1.5rem;
+      color: var(--gold-light);
+      animation: fadeUp 0.8s ease both;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      animation: fadeUp 0.8s 0.15s ease both;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .hero-subtitle {
+      font-size: 1.15rem;
+      line-height: 1.65;
+      max-width: 520px;
+      margin-top: 1.5rem;
+      color: rgba(255,255,255,0.8);
+      animation: fadeUp 0.8s 0.3s ease both;
     }
 
-    .hero-title {
-      font-size: clamp(2.4rem, 4vw, 3.4rem);
-      font-weight: 800;
+    .hero-actions {
+      display: flex; flex-wrap: wrap; gap: 1rem;
+      margin-top: 2rem;
+      animation: fadeUp 0.8s 0.45s ease both;
+    }
+    .btn-hero {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 0.9rem 2rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .btn-hero:hover { transform: translateY(-2px); }
+    .btn-hero-primary {
+      background: var(--red);
+      color: var(--white);
+      box-shadow: 0 8px 30px rgba(192,57,43,0.4);
+    }
+    .btn-hero-primary:hover { box-shadow: 0 12px 40px rgba(192,57,43,0.5); }
+    .btn-hero-outline {
+      border: 1.5px solid rgba(255,255,255,0.3);
+      color: var(--white);
+      backdrop-filter: blur(4px);
+    }
+    .btn-hero-outline:hover { background: rgba(255,255,255,0.1); }
+
+    .hero-address {
+      margin-top: 2.5rem;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.6);
+      animation: fadeUp 0.8s 0.6s ease both;
+    }
+    .hero-address strong { color: var(--gold-light); }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem; left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      animation: float 2.5s ease-in-out infinite;
+    }
+    .hero-scroll i { font-size: 1rem; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-8px); }
+    }
+
+    /* ========== SECTION SHARED ========== */
+    .section { padding: 6rem 2rem; }
+    .section-bg { background: var(--white); }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--red);
+      margin-bottom: 0.6rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+    .section-desc {
+      max-width: 540px;
+      margin-top: 0.8rem;
+      color: var(--warm-gray);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .container-site {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ========== RIBBON / MARQUEE ========== */
+    .marquee-wrap {
+      background: var(--red);
+      color: var(--white);
+      padding: 0.8rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .marquee-track {
+      display: inline-flex;
+      animation: marquee 30s linear infinite;
+    }
+    .marquee-item {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 0 2.5rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .marquee-item .dot {
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--gold-light);
+      flex-shrink: 0;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ========== MENU CARDS ========== */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 900px) { .menu-grid { grid-template-columns: 1fr; } }
+
+    .menu-card {
+      background: var(--white);
+      border-radius: 1.5rem;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.04);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+      transition: transform 0.35s, box-shadow 0.35s;
+      display: flex; flex-direction: column;
+    }
+    .menu-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+    }
+    .menu-card-img {
+      position: relative;
+      height: 240px;
+      overflow: hidden;
+    }
+    .menu-card-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s;
+    }
+    .menu-card:hover .menu-card-img img { transform: scale(1.06); }
+    .menu-card-img .card-tag {
+      position: absolute; top: 1rem; left: 1rem;
+      background: var(--red);
+      color: var(--white);
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.12em;
     }
-
-    .hero-subtitle {
-      font-size: 1.1rem;
-      max-width: 550px;
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
+    .menu-card-body {
+      padding: 1.5rem 1.5rem 1.75rem;
+      display: flex; flex-direction: column; flex: 1;
     }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.3rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(0, 0, 0, 0.6);
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .hero-badge i {
-      color: var(--accent-color);
-    }
-
-    .btn-primary-custom {
-      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-      border: none;
-      border-radius: 999px;
-      padding: 0.75rem 1.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-size: 0.9rem;
-    }
-
-    .btn-primary-custom:hover {
-      background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
-    }
-
-    .btn-outline-custom {
-      border-radius: 999px;
-      padding: 0.75rem 1.4rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-size: 0.85rem;
-      border-color: #ffffff;
-      color: #ffffff;
-    }
-
-    .btn-outline-custom:hover {
-      background-color: #ffffff;
-      color: var(--primary-dark);
-    }
-
-    .hero-meta {
-      margin-top: 1.75rem;
-      font-size: 0.9rem;
-      opacity: 0.95;
-    }
-
-    .hero-meta strong {
-      color: var(--accent-color);
-    }
-
-    /* Sections */
-    section {
-      padding: 4rem 0;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .section-header h2 {
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-size: 0.9rem;
-      color: var(--primary-color);
-      font-weight: 700;
-    }
-
-    .section-header h3 {
-      font-size: 2rem;
+    .menu-card-body h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
       font-weight: 800;
-      margin-top: 0.4rem;
     }
-
-    .section-header p {
-      max-width: 600px;
-      margin: 0.75rem auto 0;
-      color: #666666;
-      font-size: 0.95rem;
+    .menu-card-body p {
+      color: var(--warm-gray);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      margin-top: 0.5rem;
+      flex: 1;
     }
-
-    .bg-soft {
-      background-color: var(--bg-light);
+    .menu-card-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 1.2rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.8rem;
+      color: var(--warm-gray);
     }
+    .menu-card-footer span { display: flex; align-items: center; gap: 0.4rem; }
+    .menu-card-footer i { color: var(--red); font-size: 0.85rem; }
 
-    /* Cuisine cards */
-    .cuisine-card {
-      background-color: #ffffff;
-      border-radius: 1.2rem;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    /* ========== ABOUT ========== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-top: 3rem;
+    }
+    @media (max-width: 900px) { .about-grid { grid-template-columns: 1fr; } }
+
+    .about-img-wrap {
+      position: relative;
+      border-radius: 1.5rem;
       overflow: hidden;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
     }
-
-    .cuisine-card img {
-      width: 100%;
-      height: 220px;
+    .about-img-wrap img {
+      width: 100%; height: 450px;
       object-fit: cover;
     }
-
-    .cuisine-body {
-      padding: 1.25rem 1.4rem 1.4rem;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
+    .about-img-accent {
+      position: absolute;
+      bottom: -1.5rem; right: -1.5rem;
+      width: 180px; height: 180px;
+      border-radius: 1.2rem;
+      background: var(--gold);
+      opacity: 0.15;
+      z-index: -1;
     }
-
-    .cuisine-label {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--primary-color);
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-    }
-
-    .cuisine-body h4 {
-      font-weight: 700;
-      margin-bottom: 0.4rem;
-    }
-
-    .cuisine-body p {
-      font-size: 0.9rem;
-      color: #555555;
-      flex: 1;
-    }
-
-    .cuisine-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .about-text p {
+      color: var(--warm-gray);
+      line-height: 1.75;
+      font-size: 0.95rem;
       margin-top: 1rem;
-      font-size: 0.85rem;
-      color: #777;
+    }
+    .about-text p:first-of-type {
+      font-size: 1.1rem;
+      color: var(--charcoal);
+      font-weight: 500;
+    }
+    .about-stats {
+      display: flex; gap: 2.5rem;
+      margin-top: 2rem;
+    }
+    .about-stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--red);
+    }
+    .about-stat-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--warm-gray);
+      margin-top: 0.15rem;
     }
 
-    .cuisine-footer span {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-    }
-
-    /* Instagram grid */
+    /* ========== INSTAGRAM ========== */
     .insta-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 0.9rem;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.75rem;
+      margin-top: 2.5rem;
     }
+    @media (max-width: 768px) { .insta-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 480px) { .insta-grid { grid-template-columns: repeat(2, 1fr); } }
 
-    .insta-grid-item {
+    .insta-item {
       position: relative;
       border-radius: 1rem;
       overflow: hidden;
+      aspect-ratio: 1;
       cursor: pointer;
     }
-
-    .insta-grid-item img {
-      width: 100%;
-      height: 100%;
+    .insta-item img {
+      width: 100%; height: 100%;
       object-fit: cover;
-      transition: transform 0.4s ease;
+      transition: transform 0.5s, filter 0.5s;
     }
-
-    .insta-grid-item::after {
-      content: "\f16d";
-      font-family: "Font Awesome 6 Free";
-      font-weight: 900;
-      position: absolute;
-      bottom: 0.6rem;
-      right: 0.8rem;
-      font-size: 1.1rem;
-      color: #ffffff;
-      text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    .insta-item::before {
+      content: '';
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(to top, rgba(0,0,0,0.5), transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s;
     }
-
-    .insta-grid-item:hover img {
-      transform: scale(1.05);
+    .insta-item::after {
+      content: '\f16d';
+      font-family: 'Font Awesome 6 Brands';
+      position: absolute; bottom: 0.8rem; right: 0.8rem; z-index: 2;
+      font-size: 1.2rem;
+      color: var(--white);
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.3s, transform 0.3s;
     }
+    .insta-item:hover::before { opacity: 1; }
+    .insta-item:hover::after { opacity: 1; transform: translateY(0); }
+    .insta-item:hover img { transform: scale(1.08); }
 
     .insta-cta {
       text-align: center;
-      margin-top: 1.5rem;
+      margin-top: 2.5rem;
     }
-
-    /* About */
-    .about-img {
-      border-radius: 1.4rem;
-      overflow: hidden;
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
-    }
-
-    .about-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* Contact / map */
-    .contact-card {
-      background-color: #ffffff;
-      border-radius: 1.4rem;
-      padding: 1.5rem 1.75rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      border: 1px solid rgba(0, 0, 0, 0.04);
-      height: 100%;
-    }
-
-    .contact-card h4 {
+    .btn-insta {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 0.8rem 1.8rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: var(--white);
       font-weight: 700;
-      margin-bottom: 0.9rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .btn-insta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(225,48,108,0.35);
     }
 
-    .contact-list {
-      list-style: none;
-      padding-left: 0;
-      margin-bottom: 1.2rem;
+    /* ========== CONTACT ========== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 2rem;
+      margin-top: 3rem;
     }
+    @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
 
-    .contact-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.7rem;
-      margin-bottom: 0.6rem;
+    .contact-info-card {
+      background: var(--white);
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+    .contact-info-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+    }
+    .contact-row {
+      display: flex; align-items: flex-start; gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .contact-icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      background: rgba(192,57,43,0.08);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      color: var(--red);
       font-size: 0.95rem;
     }
+    .contact-row-text { font-size: 0.92rem; color: var(--warm-gray); line-height: 1.6; }
+    .contact-row-text strong { color: var(--charcoal); display: block; margin-bottom: 0.15rem; }
 
-    .contact-list li i {
-      margin-top: 0.15rem;
-      color: var(--primary-color);
+    .contact-social {
+      display: flex; gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .contact-social a {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      background: rgba(0,0,0,0.04);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      color: var(--charcoal);
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+    }
+    .contact-social a:hover {
+      background: var(--red);
+      color: var(--white);
+      transform: translateY(-2px);
     }
 
-    .map-wrapper {
-      border-radius: 1.4rem;
+    .map-wrap {
+      border-radius: 1.5rem;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+      height: 100%; min-height: 360px;
+    }
+    .map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+    /* ========== FOOTER ========== */
+    .footer {
+      background: var(--charcoal);
+      color: rgba(255,255,255,0.5);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .footer p { font-size: 0.85rem; margin-top: 0.3rem; }
+    .footer-links {
+      display: flex; gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.4);
+      transition: color 0.3s;
+    }
+    .footer-links a:hover { color: var(--gold-light); }
+
+    .footer-bottom {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.78rem;
     }
 
-    iframe {
-      display: block;
+    /* ========== SCROLL REVEAL ========== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
     }
-
-    /* Footer */
-    footer {
-      padding: 1.5rem 0;
-      border-top: 1px solid rgba(0, 0, 0, 0.06);
-      font-size: 0.85rem;
-      color: #777;
-    }
-
-    @media (max-width: 991.98px) {
-      .hero {
-        padding-top: 5rem;
-        padding-bottom: 4rem;
-      }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#home">
-        Annie's Pizzeria
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#menu">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#instagram">Instagram</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="mainNav">
+    <a href="#home" class="nav-logo">Annie's</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#instagram">Instagram</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.annies-pizzeria.com/order-now" class="nav-order-btn">Order Now</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- ===== HERO ===== -->
   <header id="home" class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge mb-3">
-          <i class="fa-solid fa-pizza-slice"></i>
-          <span>Medford, Massachusetts</span>
-        </div>
-        <h1 class="hero-title">Annie's Pizzeria</h1>
-        <p class="hero-subtitle">
-          Classic neighborhood pizza in Medford, serving slices and pies with the kind of
-          crust that makes you think about it for the rest of the week.
-        </p>
-        <div class="d-flex flex-wrap gap-3">
-          <a href="https://www.annies-pizzeria.com/order-now" class="btn btn-primary-custom">
-            Order Now
-          </a>
-          <a
-            href="https://www.instagram.com/anniespizzeria_"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline-custom d-inline-flex align-items-center gap-2"
-          >
-            <i class="fa-brands fa-instagram"></i>
-            Follow on Instagram
-          </a>
-        </div>
-
-        <div class="hero-meta">
-          <p class="mb-1 mt-3">
-            <strong>Visit us:</strong> 213 Middlesex Ave, Medford, Massachusetts 02155
-          </p>
-          <p class="mb-0">
-            Grab a slice, share a pie, and bring your people.
-          </p>
-        </div>
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-content container-site">
+      <div class="hero-badge">
+        <i class="fa-solid fa-pizza-slice"></i>
+        Medford, Massachusetts
       </div>
+      <h1 class="hero-title">Annie's<br><em>Pizzeria</em></h1>
+      <p class="hero-subtitle">
+        Classic neighborhood pizza in Medford. The kind of crust that makes you
+        think about it for the rest of the week.
+      </p>
+      <div class="hero-actions">
+        <a href="https://www.annies-pizzeria.com/order-now" class="btn-hero btn-hero-primary">
+          <i class="fa-solid fa-basket-shopping"></i> Order Now
+        </a>
+        <a href="https://www.instagram.com/anniespizzeria_" target="_blank" rel="noopener noreferrer" class="btn-hero btn-hero-outline">
+          <i class="fa-brands fa-instagram"></i> Follow Us
+        </a>
+      </div>
+      <p class="hero-address">
+        <strong><i class="fa-solid fa-location-dot"></i></strong>&ensp;213 Middlesex Ave, Medford, MA 02155
+      </p>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
     </div>
   </header>
 
-  <!-- Featured Cuisines / Menu -->
-  <section id="menu" class="bg-soft">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our Featured Cuisines</h2>
-        <h3>Pizza, Pasta & More</h3>
-        <p>
-          From crispy New York–style pies to hearty baked dishes and fresh salads,
-          there’s something on the table for everyone.
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="dot"></span> Fresh Dough Daily</span>
+      <span class="marquee-item"><span class="dot"></span> Whole Pies & Slices</span>
+      <span class="marquee-item"><span class="dot"></span> Pasta & Baked Dishes</span>
+      <span class="marquee-item"><span class="dot"></span> Dine In · Pick Up · Delivery</span>
+      <span class="marquee-item"><span class="dot"></span> Salads & Sides</span>
+      <span class="marquee-item"><span class="dot"></span> Medford's Favorite</span>
+      <span class="marquee-item"><span class="dot"></span> Fresh Dough Daily</span>
+      <span class="marquee-item"><span class="dot"></span> Whole Pies & Slices</span>
+      <span class="marquee-item"><span class="dot"></span> Pasta & Baked Dishes</span>
+      <span class="marquee-item"><span class="dot"></span> Dine In · Pick Up · Delivery</span>
+      <span class="marquee-item"><span class="dot"></span> Salads & Sides</span>
+      <span class="marquee-item"><span class="dot"></span> Medford's Favorite</span>
+    </div>
+  </div>
+
+  <!-- ===== MENU ===== -->
+  <section id="menu" class="section section-bg">
+    <div class="container-site">
+      <div class="reveal">
+        <div class="section-label">Our Featured Cuisines</div>
+        <div class="section-title">Pizza, Pasta<br>& More</div>
+        <p class="section-desc">
+          From crispy New York–style pies to hearty baked dishes and fresh salads —
+          there's something on the table for everyone.
         </p>
       </div>
 
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-          <div class="cuisine-card">
+      <div class="menu-grid">
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
             <img src="img/1.png" alt="Pizza at Annie's Pizzeria" />
-            <div class="cuisine-body">
-              <div class="cuisine-label">Classics</div>
-              <h4>Signature Pizzas</h4>
-              <p>
-                Cheese, pepperoni, and specialty pies built on a crisp, foldable crust
-                with just the right amount of char.
-              </p>
-              <div class="cuisine-footer">
-                <span><i class="fa-solid fa-pizza-slice"></i> Whole pies & slices</span>
-                <span>Fresh dough daily</span>
-              </div>
+            <span class="card-tag">Classics</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Signature Pizzas</h3>
+            <p>
+              Cheese, pepperoni, and specialty pies built on a crisp, foldable crust
+              with just the right amount of char.
+            </p>
+            <div class="menu-card-footer">
+              <span><i class="fa-solid fa-pizza-slice"></i> Whole pies & slices</span>
+              <span>Fresh dough daily</span>
             </div>
           </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="col-md-4">
-          <div class="cuisine-card">
-            <img src="img/2.png" alt="Pasta at Annie's Pizzeria" />
-            <div class="cuisine-body">
-              <div class="cuisine-label">Comfort</div>
-              <h4>Pasta & Baked Dishes</h4>
-              <p>
-                Hearty baked ziti, lasagna, and pasta plates layered with cheese, sauce,
-                and serious comfort.
-              </p>
-              <div class="cuisine-footer">
-                <span><i class="fa-solid fa-bowl-food"></i> Generous portions</span>
-                <span>Perfect for sharing</span>
-              </div>
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
+            <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/photosV2/91430b24-af36-43a3-99ef-4aacbcc19832-8883d5dd-88c9-469f-9ca6-7cffcd228c08-retina-large.jpg" alt="Pasta at Annie's Pizzeria" />
+            <span class="card-tag">Comfort</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Pasta & Baked Dishes</h3>
+            <p>
+              Hearty baked ziti, lasagna, and pasta plates layered with cheese, sauce,
+              and serious comfort.
+            </p>
+            <div class="menu-card-footer">
+              <span><i class="fa-solid fa-bowl-food"></i> Generous portions</span>
+              <span>Perfect for sharing</span>
             </div>
           </div>
         </div>
 
-        <!-- Card 3 -->
-        <div class="col-md-4">
-          <div class="cuisine-card">
-            <img src="img/salads.png" alt="Salads and sides at Annie's Pizzeria" />
-            <div class="cuisine-body">
-              <div class="cuisine-label">Fresh</div>
-              <h4>Salads & Sides</h4>
-              <p>
-                Round out your meal with crisp salads, garlic knots, and appetizers
-                that disappear the second they hit the table.
-              </p>
-              <div class="cuisine-footer">
-                <span><i class="fa-solid fa-leaf"></i> Lighter options</span>
-                <span>Great add-ons</span>
-              </div>
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
+            <img src="https://lh3.googleusercontent.com/proxy/enQfzShnN2TLIcApon88cxYAZ0tFHr-G3zXO5JSVn-1s94HoJBglJnGujf4XplqGgSz7SWDf_1lt-esiOE8KyQS7Uy8mHHU_Ib9O1wYS-hJ9GsWm8KQDDuRRnSmeidQbWPpT3_q0H9mAXoPpr8CfxaAjy0hdTA=s1360-w1360-h1020" alt="Salads and sides at Annie's Pizzeria" />
+            <span class="card-tag">Fresh</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Salads & Sides</h3>
+            <p>
+              Round out your meal with crisp salads, garlic knots, and appetizers
+              that disappear the second they hit the table.
+            </p>
+            <div class="menu-card-footer">
+              <span><i class="fa-solid fa-leaf"></i> Lighter options</span>
+              <span>Great add-ons</span>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Optional note for online ordering / phone number if you add later -->
-      <!--
-      <div class="text-center mt-4">
-        <p class="mb-1">Call us to place your order:</p>
-        <a href="tel:XXXXXXXXXX" class="fw-semibold"> (XXX) XXX-XXXX </a>
-      </div>
-      -->
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-6">
-          <div class="about-img">
-            <!-- Reuse one of your local images if you want; update src as needed -->
-            <img src="img/4.png" alt="Inside Annie's Pizzeria" />
-          </div>
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container-site">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <img src="https://lh3.googleusercontent.com/proxy/cbDMNrIqLz8nbonyqAKrp70-_e_rbos0HdqOiSul21l53iX-S4jFtgvcuWsXTYoSD2MemBGYL54Cbpd-k7t9XciEUIPxrXf3hDIcft0iHCUCST4TNJVNFyLc3JFIgC8vNU-ABKHcG_IuemwYaSdebUsZp9u2-w=s1360-w1360-h1020" alt="Inside Annie's Pizzeria" />
+          <div class="about-img-accent"></div>
         </div>
-        <div class="col-lg-6">
-          <div class="section-header text-start mb-3">
-            <h2>Our Story</h2>
-            <h3>Neighborhood Spot, Big Flavor</h3>
-          </div>
+        <div class="about-text reveal">
+          <div class="section-label">Our Story</div>
+          <div class="section-title">Neighborhood Spot,<br>Big Flavor</div>
           <p>
-            Annie's Pizzeria is the kind of place you grow up with. The place you hit
-            after a long day, post-game, or on the nights you just can’t be bothered to
-            cook. Simple ingredients, good dough, hot ovens, and people who care about
-            getting your order right.
+            Annie's Pizzeria is the kind of place you grow up with.
+          </p>
+          <p>
+            The place you hit after a long day, post-game, or on the nights you just
+            can't be bothered to cook. Simple ingredients, good dough, hot ovens, and
+            people who care about getting your order right.
           </p>
           <p>
             Stop in for a quick slice at the counter or take a pie home to the couch.
-            Either way, we’re proud to be part of your regular rotation.
+            Either way, we're proud to be part of your regular rotation.
           </p>
+          <div class="about-stats">
+            <div>
+              <div class="about-stat-num">4.8</div>
+              <div class="about-stat-label">Google Rating</div>
+            </div>
+            <div>
+              <div class="about-stat-num">150+</div>
+              <div class="about-stat-label">Reviews</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Instagram -->
-  <section id="instagram" class="bg-soft">
-    <div class="container">
-      <div class="section-header">
-        <h2>We Are On Instagram</h2>
-        <h3>Follow Us!</h3>
-        <p>
+  <!-- ===== INSTAGRAM ===== -->
+  <section id="instagram" class="section section-bg">
+    <div class="container-site">
+      <div class="reveal" style="text-align: center;">
+        <div class="section-label">We're On Instagram</div>
+        <div class="section-title">Follow the Flavor</div>
+        <p class="section-desc" style="margin-left: auto; margin-right: auto;">
           See the latest pies coming out of the oven, daily specials, and behind-the-scenes
           moments from the shop.
         </p>
       </div>
 
-      <a
-        href="https://www.instagram.com/anniespizzeria_"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-decoration-none text-reset"
-      >
-        <div class="insta-grid">
-          <!-- Use as many as you have: img/5.png, img/6.png, etc. -->
-          <div class="insta-grid-item">
-            <img src="img/5.png" alt="Annie's Pizzeria Instagram 1" />
-          </div>
-          <div class="insta-grid-item">
-            <img src="img/6.png" alt="Annie's Pizzeria Instagram 2" />
-          </div>
-          <div class="insta-grid-item">
-            <img src="img/3.png" alt="Annie's Pizzeria Instagram 3" />
-          </div>
-          <div class="insta-grid-item">
-            <img src="img/2.png" alt="Annie's Pizzeria Instagram 4" />
-          </div>
-          <div class="insta-grid-item">
-            <img src="img/4.png" alt="Annie's Pizzeria Instagram 5" />
-          </div>
+      <a href="https://www.instagram.com/anniespizzeria_" target="_blank" rel="noopener noreferrer">
+        <div class="insta-grid reveal">
+          <div class="insta-item"><img src="img/5.png" alt="Annie's Pizzeria Instagram" /></div>
+          <div class="insta-item"><img src="img/6.png" alt="Annie's Pizzeria Instagram" /></div>
+          <div class="insta-item"><img src="img/3.png" alt="Annie's Pizzeria Instagram" /></div>
+          <div class="insta-item"><img src="img/2.png" alt="Annie's Pizzeria Instagram" /></div>
+          <div class="insta-item"><img src="img/4.png" alt="Annie's Pizzeria Instagram" /></div>
         </div>
       </a>
 
-      <div class="insta-cta">
-        <a
-          href="https://www.instagram.com/anniespizzeria_"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-primary-custom mt-3 d-inline-flex align-items-center gap-2"
-        >
-          <i class="fa-brands fa-instagram"></i>
-          @anniespizzeria_
+      <div class="insta-cta reveal">
+        <a href="https://www.instagram.com/anniespizzeria_" target="_blank" rel="noopener noreferrer" class="btn-insta">
+          <i class="fa-brands fa-instagram"></i> @anniespizzeria_
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Contact & Map -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-header">
-        <h2>Visit Us</h2>
-        <h3>Find Annie's Pizzeria</h3>
-        <p>
-          Swing by the shop, grab a slice, and say hi. We’re right in Medford and ready
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container-site">
+      <div class="reveal" style="text-align: center;">
+        <div class="section-label">Visit Us</div>
+        <div class="section-title">Find Annie's Pizzeria</div>
+        <p class="section-desc" style="margin-left: auto; margin-right: auto;">
+          Swing by the shop, grab a slice, and say hi. We're right in Medford and ready
           when you are.
         </p>
       </div>
 
-      <div class="row g-4 align-items-stretch">
-        <div class="col-lg-5">
-          <div class="contact-card">
-            <h4>Location</h4>
-            <ul class="contact-list">
-              <li>
-                <i class="fa-solid fa-location-dot"></i>
-                <span>
-                  213 Middlesex Ave<br />
-                  Medford, Massachusetts 02155
-                </span>
-              </li>
-              <!-- Add phone / hours when you have them -->
-              <!--
-              <li>
-                <i class="fa-solid fa-phone"></i>
-                <span>(XXX) XXX-XXXX</span>
-              </li>
-              -->
-            </ul>
+      <div class="contact-grid">
+        <div class="contact-info-card reveal">
+          <h3>Come Say Hi</h3>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-row-text">
+              <strong>Address</strong>
+              213 Middlesex Ave<br>Medford, MA 02155
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-row-text">
+              <strong>Hours</strong>
+              Open daily — check Instagram for updates
+            </div>
+          </div>
 
-            <h4>Stay Connected</h4>
-            <ul class="contact-list">
-              <li>
-                <i class="fa-brands fa-instagram"></i>
-                <a
-                  href="https://www.instagram.com/anniespizzeria_"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  @anniespizzeria_
-                </a>
-              </li>
-            </ul>
+          <h3 style="margin-top: 1.5rem;">Stay Connected</h3>
+          <div class="contact-social">
+            <a href="https://www.instagram.com/anniespizzeria_" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </div>
         </div>
 
-        <div class="col-lg-7">
-          <div class="map-wrapper">
-            <iframe
-              src="https://www.google.com/maps?q=213+Middlesex+Ave,+Medford,+Massachusetts+02155&output=embed"
-              width="100%"
-              height="400"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+        <div class="map-wrap reveal">
+          <iframe
+            src="https://www.google.com/maps?q=213+Middlesex+Ave,+Medford,+Massachusetts+02155&output=embed"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-      <span>© <span id="year"></span> Annie's Pizzeria. All rights reserved.</span>
-      <span>213 Middlesex Ave, Medford, MA 02155</span>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container-site">
+      <div class="footer-logo">Annie's Pizzeria</div>
+      <p>213 Middlesex Ave, Medford, MA 02155</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.annies-pizzeria.com/order-now">Order Now</a>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year"></span> Annie's Pizzeria. All rights reserved.
+      </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  ></script>
   <script>
-    // Set current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Nav scroll
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Mobile toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          // Stagger children if they share a parent grid
+          const siblings = entry.target.parentElement.querySelectorAll('.reveal');
+          let idx = Array.from(siblings).indexOf(entry.target);
+          entry.target.style.transitionDelay = (idx * 0.12) + 's';
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => observer.observe(el));
   </script>
+
 </body>
 </html>
